@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* outline: 1px solid rebeccapurple; */
+    outline-offset: -1px;
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+}
+.section {
+    min-height: 100vh;
+    position: relative;
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.center h1 {
+    text-align: center;
+}
+
+#text {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%, -50%);
+    padding: 1rem;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 700;
+    font-family: "Special Elite", cursive;
+}
+
+.card-container {
+    top: 15rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+.inner-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.card {
+    transform-style: preserve-3d;
+    background-color: whitesmoke;
+    min-height: 60vh;
+    border-radius: 30px;
+    width: 35vh;
+    padding: 0 3rem;
+    padding: 1rem 1rem;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.5);
+    transition: all 0.1s ease-in-out;
+}
+.subject {
+    margin: 1rem 1rem;
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.subject img {
+    width: 17rem;
+    z-index: 2;
+    margin: 0 auto;
+    display: block;
+    transition: all 0.75s ease-out;
+}
+.circle {
+    width: 17rem;
+    height: 22rem;
+    background: floralwhite;
+    position: absolute;
+    z-index: 1;
+}
+
+.info {
+    text-align: center;
+}
+.info h1 {
+    font-size: 3rem;
+    transition: all 0.75s ease-out;
+}
+
+.info h3 {
+    color: #585858;
+    font-weight: lighter;
+    transition: all 0.75s ease-out;
+}
+
+.languages {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+}
+
+.languages img {
+    padding: 0.2rem 0.8rem;
+    margin: 0 0.1rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    border: none;
+    background: white;
+    font-weight: bold;
+    fill: white;
+    max-height: 30px;
+    max-width: 30px;
+}
+
+.icon {
+    transition: all 0.75s ease-out;
+}
+/* .languages button:hover {
+    background: #585858;
+    color: white;
+} */
